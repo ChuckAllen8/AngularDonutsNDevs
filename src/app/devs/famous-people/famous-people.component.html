@@ -1,0 +1,3 @@
+<div *ngIf="people" class="card card-single">
+    <app-famous-person *ngFor="let p of people.complete" [person]="p"></app-famous-person>
+</div>

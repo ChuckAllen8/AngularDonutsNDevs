@@ -1,0 +1,4 @@
+<div class="card-medium">
+    <h3 class="button" (click)="expand()">{{person.firstName}} {{person.lastName}}</h3>
+    <div *ngIf="showing">{{person.innovation}} {{person.year}}</div>
+</div>

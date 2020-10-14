@@ -1,0 +1,6 @@
+<ng-container *ngIf="extraData.error">
+    <h2 class="text-center">We couldn't find the page you were looking for, but here are some donuts!</h2>
+</ng-container>
+<div *ngIf="donuts" class="card card-single">
+    <app-donut-partial-detail *ngFor="let don of donuts.results" [donut]="don"></app-donut-partial-detail>
+</div>

@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+
+.card-single {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.card-small {
+    display: inline-flex;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    margin: 7px 7px 7px 7px;
+}
+
+.card-medium {
+    width: 80%;
+    margin: 7px 7px 7px 7px;
+    padding: 5px 5px 5px 5px;
+    border-style: outset;
+    box-shadow: 3px 3px rgba(200, 100, 100, 0.5);
+    height: fit-content;
+}
+
+.card {
+    margin-top: 10px;
+    align-content: center;
+    border-radius: 20px;
+    border-style: outset;
+    box-shadow: 5px 5px rgba(100, 100, 100, 0.5);
+    padding: 5px 5px 5px 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.top-nav {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-content: center;
+}
+
+.top-nav-button {
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    cursor: pointer;
+    margin-right: 10px;
+    float: left;
+    width: 6%;
+}
+
+.top-nav-button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+.top-nav-button:focus {
+    outline: none;
+}

@@ -1,0 +1,14 @@
+<div *ngIf="donut" class="card card-single">
+    <div class="header">
+        <h2>{{donut.name}}</h2>
+    </div>
+    <div class="top">
+        <img style="width: 600px; object-fit: contain;" [src]="donut.photo" alt="Photo credit {{donut.photo_attribution}}" title="Photo credit {{donut.photo_attribution}}" />
+    </div>
+    <div class="bottom">
+        <span>Calories {{donut.calories}} </span>
+        <ul>
+            <li *ngFor="let feature of donut.extras">{{feature}}</li>
+        </ul>
+    </div>
+</div>
