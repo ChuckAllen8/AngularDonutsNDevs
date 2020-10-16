@@ -1,0 +1,13 @@
+<div class="card-medium">
+    <h3 class="button" (click)="expand()">Add Person</h3>
+    <div *ngIf="showing">
+        <div>
+            First Name: <input [(ngModel)]="person.firstName" /><br />
+            Last Name: <input [(ngModel)]="person.lastName" /><br />
+            Innovation: <input [(ngModel)]="person.innovation" /><br />
+            Year: <input [(ngModel)]="person.year" /><br />
+        </div>
+        <p>{{ message }}</p>
+    </div>
+    <button (click)="add()">Add</button>
+</div>

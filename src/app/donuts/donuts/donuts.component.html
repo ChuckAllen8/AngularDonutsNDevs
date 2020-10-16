@@ -4,3 +4,4 @@
 <div *ngIf="donuts" class="card card-single">
     <app-donut-partial-detail *ngFor="let don of donuts.results" [donut]="don"></app-donut-partial-detail>
 </div>
+<div *ngIf="!donuts">Loading...</div>

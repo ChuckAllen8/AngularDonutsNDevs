@@ -1,3 +1,5 @@
+<app-add-person (added)="onAdd($event)"></app-add-person>
 <div *ngIf="people" class="card card-single">
-    <app-famous-person *ngFor="let p of people.complete" [person]="p"></app-famous-person>
+    <app-famous-person *ngFor="let p of people" [person]="p" (deleted)="onDelete($event)"></app-famous-person>
 </div>
+<div *ngIf="!people">Loading...</div>

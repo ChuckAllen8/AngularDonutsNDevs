@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { DonutDetailComponent } from './donuts/donut-detail/donut-detail.compone
 import { FamousPersonComponent } from './devs/famous-person/famous-person.component';
 import { FamousPeopleComponent } from './devs/famous-people/famous-people.component';
 import { DonutPartialDetailComponent } from './donuts/donut-partial-detail/donut-partial-detail.component';
+import { AddPersonComponent } from './devs/add-person/add-person.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { DonutPartialDetailComponent } from './donuts/donut-partial-detail/donut
     DonutDetailComponent,
     FamousPersonComponent,
     FamousPeopleComponent,
-    DonutPartialDetailComponent
+    DonutPartialDetailComponent,
+    AddPersonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,8 @@ import { DevDataService } from '../../services/dev-data.service';
 export class FamousPersonComponent implements OnInit {
   @Input() person: Dev;
   showing: boolean;
+  updating: boolean;
+  @Output() deleted: EventEmitter<Dev> = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
@@ -17,6 +19,14 @@ export class FamousPersonComponent implements OnInit {
 
   expand() {
     this.showing = !this.showing;
+  }
+
+  delete() {
+    this.deleted.emit(this.person);
+  }
+
+  flip() {
+    this.updating = !this.updating;
   }
 
 }
